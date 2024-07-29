@@ -230,7 +230,7 @@ function createBoxGeometry() {
   boxGeometry = BufferGeometryUtils.mergeVertices(boxGeometry);
 
   boxGeometry.computeVertexNormals();
-
+ //kaan
   return boxGeometry;
 }
 
