@@ -1,3 +1,8 @@
+import * as CANNON from "https://cdn.skypack.dev/cannon-es";
+
+import * as THREE from "three";
+import * as BufferGeometryUtils from "three/addons/utils/BufferGeometryUtils.js";
+
 const canvasEl = document.querySelector("#canvas");
 const scoreResult = document.querySelector("#score-result");
 const rollBtn = document.querySelector("#roll-btn");
@@ -326,7 +331,7 @@ function render() {
 function updateSceneSize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.innerWidth * 0.9, window.innerHeight * 0.9);
 }
 
 function throwDice() {
